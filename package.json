@@ -1,0 +1,44 @@
+{
+  "type": "module",
+  "name": "schema-dts-test",
+  "version": "1.0.0",
+  "description": "Schema.org test",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "node --experimental-specifier-resolution=node --loader ts-node/esm index.ts",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJKoury/vcard_person.git"
+  },
+  "keywords": [
+    "vcard",
+    "ical",
+    "schema",
+    "schema.org",
+    "person"
+  ],
+  "author": "TJKoury",
+  "license": "CLOSED",
+  "bugs": {
+    "url": "https://github.com/TJKoury/vcard_person/issues"
+  },
+  "homepage": "https://github.com/TJKoury/vcard_person#readme",
+  "devDependencies": {
+    "@types/atob": "^2.1.2",
+    "@types/btoa": "^1.2.3",
+    "nodemon": "^2.0.15",
+    "schema-dts": "^1.0.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "btoa": "^1.2.1",
+    "digital-arsenal-schema-dts": "^1.0.0",
+    "ical.js": "^1.5.0",
+    "vcard4": "^3.0.1"
+  }
+}
